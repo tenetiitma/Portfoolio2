@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>Portfolio</title>
+</head>
+
+<body class="bg-black text-white">
+
+    <nav class="lg:flex sm:hidden justify-between items-center p-8">
+        <div class="text-2xl">LOGO</div>
+        <div class="space-x-8">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Review</a>
+            <a href="">Contact</a>
+        </div>
+    </nav>
+    <nav class="lg:hidden sm:flex justify-between items-center p-10">
+        <p class="text-xl">LOGO</p>
+        <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </div>
+    </nav>
+
+    <section class="py-20 lg:py-40 px-20">
+        <div class="sm:hidden md:flex lg:flex flex-col justify-center items-center">
+            <p class="text-7xl py-20 lg:py-40">Portfoolio</p>
+            <div class="sm:hidden flex flex-col md:grid md:grid-cols-2 lg:grid-cols-2 lg:px-10 sm:flex-row ">
+                <a href="index2.html"><img src="/src/img/Rectangle 1.png" alt=""></a>
+                <img src="/src/img/Rectangle 2.png" alt="">
+                <img src="/src/img/Rectangle 4.png" alt="">
+                <img src="/src/img/Rectangle 3.png" alt="">
+                <img src="/src/img/Rectangle 11.png" alt="">
+                <img src="/src/img/Rectangle 12.png" alt="">
+            </div>
+        </div>
+
+        <!-- Mobile view slider -->
+        <div class="lg:hidden md:hidden sm:flex flex-col pb-20">
+            <p class="text-6xl text-white py-20 text-center">Portfoolio</p>
+            <div class="h-[69.5vh] relative">
+                <ul id="slider">
+                    <li class="h-[69.5vh] relative"><img class=" h-full object-cover w-full"
+                            src="/src/img/Rectangle 1.png" alt=""></li>
+                    <li class="h-[69.5vh] relative hidden"><img class=" h-full object-cover w-full"
+                            src="/src/img/Rectangle 11.png" alt=""></li>
+                    <li class="h-[69.5vh] relative hidden"><img class=" h-full object-cover w-full"
+                            src="/src/img/Rectangle 2.png" alt=""></li>
+                    <li class="h-[69.5vh] relative hidden"><img class=" h-full object-cover w-full"
+                            src="/src/img/Rectangle 4.png" alt=""></li>
+                    <li class="h-[69.5vh] relative hidden"><img class=" h-full object-cover w-full"
+                            src="/src/img/Rectangle 3.png" alt=""></li>
+                    <li class="h-[69.5vh] relative hidden"><img class=" h-full object-cover w-full"
+                            src="/src/img/Rectangle 12.png" alt=""></li>
+                </ul>
+                <div class="absolute flex px-3 top-0 left-0 h-full w-full ">
+                    <div class="my-auto w-full flex justify-between">
+                        <button onclick="prevSlide()"
+                            class="bg-black p-2 rounded-full bg-opacity-80 shadow-lg hover:opacity-50 duration-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-10 h-10">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                            </svg>
+                        </button>
+                        <button onclick="nextSlide()"
+                            class="bg-black p-2 rounded-full bg-opacity-80 shadow-lg hover:opacity-50 duration-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-10 h-10">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-20">
+        <div class="p-20 sm:hidden lg:grid md:grid gap-0 grid-cols-4">
+            <h1 class="text-6xl text-center col-span-4 pb-20">
+                <span>About</span>
+            </h1>
+            <p class="text-center px-20 text-2xl pb-20 col-span-4">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Orci
+                odio amet consectetur volutpat sodales a lectus a. Et gravida tincidunt morbi habitasse. Ultrices magna
+                laoreet ornareLorem ipsum dolor sit amet, consectetur adipiscing elit. Orci odio amet consectetur
+                volutpat sodales a lectus a. Et gravida tincidunt morbi habitasse</p>
+            <img src="/src/img/Rectangle 7.png" alt="">
+            <img src="/src/img/Rectangle 8.png" alt="">
+            <img src="/src/img/Rectangle 9.png" alt="">
+            <img src="/src/img/Rectangle 10.png" alt="">
+        </div>
+
+        <!-- MOBILE VIEW ABOUT -->
+        <div class="md:hidden lg:hidden sm:flex flex-col pb-20">
+            <p class="text-6xl py-20 text-center">About</p>
+            <p class="text-xl px-20 pb-20 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci
+                odio amet consectetur volutpat sodales a lectus a. Et gravida tincidunt morbi habitasse. Ultrices magna
+                laoreet ornareLorem ipsum dolor sit amet, consectetur adipiscing elit. Orci odio amet consectetur
+                volutpat sodales a lectus a. Et gravida tincidunt morbi habitasse</p>
+            <div class="h-[50vh] relative">
+                <ul id="about">
+                    <li class="h-[50vh] relative"><img class="h-full object-scale-down w-full"
+                            src="/src/img/Rectangle 7.png" alt=""></li>
+                    <li class="h-[50vh] relative hidden"><img class="h-full object-scale-down w-full"
+                            src="/src/img/Rectangle 8.png" alt=""></li>
+                    <li class="h-[50vh] relative hidden"><img class="h-full object-scale-down w-full"
+                            src="/src/img/Rectangle 9.png" alt=""></li>
+                    <li class="h-[50vh] relative hidden"><img class="h-full object-scale-down w-full"
+                            src="/src/img/Rectangle 10.png" alt=""></li>
+                </ul>
+                <div class="absolute flex px-32 top-0 left-0 h-full w-full ">
+                    <div class="my-auto w-full flex justify-between">
+                        <button onclick="prevPic()"
+                            class="bg-gray-500 p-2 rounded-full bg-opacity-80 shadow-lg hover:opacity-50 duration-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-10 h-10">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                            </svg>
+                        </button>
+                        <button onclick="nextPic()"
+                            class="bg-gray-500 p-2 rounded-full bg-opacity-80 shadow-lg hover:opacity-50 duration-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-10 h-10">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="text-black lg:pb-20 mb:pb-20">
+        <h1 class="text-[60px] text-white flex justify-center py-20">Services</h1>
+        <div class="sm:hidden md:grid overflow-x-auto lg:grid grid-cols-2 lg:px-20">
+            <div class="flex flex-col bg-gray-100 py-20 px-12">
+                <h1 class="text-[60px] font-bold max-w-sm leading-[50px] pb-6">Web Development</h1>
+                <p class="pb-20 text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci odio amet
+                    consectetur
+                    volutpat sodales a lectus a. Et gravida tincidunt morbi habitasse. Ultrices magna laoreet ornare</p>
+                <p class="mt-auto text-xl">Get a quote</p>
+            </div>
+            <div class="flex flex-col bg-gray-300 py-20 px-12">
+                <h1 class="text-[60px] font-bold max-w-sm leading-[50px] pb-6">Product Design</h1>
+                <p class="pb-20 text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci odio amet
+                    consectetur
+                    volutpat sodales a lectus a. Et gravida tincidunt morbi habitasse. Ultrices magna laoreet ornare</p>
+                <p class="mt-auto text-xl">Get a quote</p>
+            </div>
+            <div class="flex flex-col bg-gray-100 lg:bg-gray-300 py-20 px-12">
+                <h1 class="text-[60px] font-bold max-w-sm leading-[50px] pb-6">Graphic Design</h1>
+                <p class="pb-20 text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci odio amet
+                    consectetur
+                    volutpat sodales a lectus a. Et gravida tincidunt morbi habitasse. Ultrices magna laoreet ornare</p>
+                <p class="mt-auto text-xl">Get a quote</p>
+            </div>
+            <div class="flex flex-col bg-gray-300 lg:bg-gray-100 py-20 px-12">
+                <h1 class="text-[60px] font-bold max-w-sm leading-[60px] pb-10">Mobile App</h1>
+                <p class="pb-20 text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci odio amet
+                    consectetur
+                    volutpat sodales a lectus a. Et gravida tincidunt morbi habitasse. Ultrices magna laoreet ornare</p>
+                <p class="mt-auto text-xl">Get a quote</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile view cards -->
+    <section>
+        <div class="lg:hidden md:hidden sm:flex flex-col pb-20">
+            <div class="h-[69vh] bg-red-600 relative text-black aspect-square m-10">
+                <ul id="cards">
+                    <li class="h-[69vh] relative">
+                        <div class="flex flex-col bg-gray-100 py-10 px-20 h-full">
+                            <h1 class="text-[60px] font-bold max-w-sm leading-[60px] pb-10">Web Development</h1>
+                            <p class="pb-20 text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci odio
+                                amet
+                                consectetur
+                                volutpat sodales a lectus a. Et gravida tincidunt morbi habitasse. Ultrices magna
+                                laoreet ornare</p>
+                            <p class="mt-auto text-xl">Get a quote</p>
+                        </div>
+                    </li>
+                    <li class="h-[69vh] relative hidden">
+                        <div class="flex flex-col bg-gray-300 py-10 px-20 h-full">
+                            <h1 class="text-[60px] font-bold max-w-sm leading-[60px] pb-10">Product Design</h1>
+                            <p class="pb-20 text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci odio
+                                amet
+                                consectetur
+                                volutpat sodales a lectus a. Et gravida tincidunt morbi habitasse. Ultrices magna
+                                laoreet ornare</p>
+                            <p class="mt-auto text-xl">Get a quote</p>
+                        </div>
+                    </li>
+                    <li class="h-[69vh] relative hidden">
+                        <div class="flex flex-col bg-gray-100 lg:bg-gray-300 py-10 px-20 h-full">
+                            <h1 class="text-[60px] font-bold max-w-sm leading-[60px] pb-10">Graphic Design</h1>
+                            <p class="pb-20 text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci odio
+                                amet
+                                consectetur
+                                volutpat sodales a lectus a. Et gravida tincidunt morbi habitasse. Ultrices magna
+                                laoreet ornare</p>
+                            <p class="mt-auto text-xl">Get a quote</p>
+                        </div>
+                    </li>
+                    <li class="h-[69vh] relative hidden">
+                        <div class="flex flex-col bg-gray-300 lg:bg-gray-100 py-10 px-20 h-full">
+                            <h1 class="text-[60px] font-bold max-w-sm leading-[60px] pb-[13.6vh]">Mobile App</h1>
+                            <p class="pb-20 text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci odio
+                                amet
+                                consectetur
+                                volutpat sodales a lectus a. Et gravida tincidunt morbi habitasse. Ultrices magna
+                                laoreet ornare</p>
+                            <p class="mt-auto text-xl">Get a quote</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="absolute flex px-3 top-0 left-0 h-full w-full ">
+                    <div class="my-auto w-full flex justify-between">
+                        <button onclick="prevCard()"
+                            class="bg-gray-400 p-2 rounded-full bg-opacity-80 shadow-lg hover:opacity-50 duration-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-10 h-10">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                            </svg>
+                        </button>
+                        <button onclick="nextCard()"
+                            class="bg-gray-400 p-2 rounded-full bg-opacity-80 shadow-lg hover:opacity-50 duration-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-10 h-10">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+    </section>
+
+    <section class="px-40 pb-40">
+        <h1 class="text-[60px] flex justify-center py-20">Contact</h1>
+        <h1 class="text-[60px] flex justify-center">contact@email.com</h1>
+        <h1 class="text-[60px] flex justify-center">+0 000 000</h1>
+    </section>
+
+    <footer
+        class="mb-0 lg:bg-white md:bg-white sm:bg-black lg:text-black md:text-black sm:text-white px-20 flex flex-row row-span-1 lg:justify-between sm:justify-center sm:pb-10 md:pb-0 lg:pb-0">
+        <div class="flex justify-between h-12 place-items-center">
+            <p class="font-bold ">2022 Company</p>
+        </div>
+        <div class="lg:flex flex-row place-items-center gap-32 sm:hidden">
+            <p>Terms and Conditions</p>
+            <p>Privacy Policy</p>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
